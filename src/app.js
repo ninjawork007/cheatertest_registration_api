@@ -19,6 +19,7 @@ app.use((err, req, res, next) => {
 });
 
 const apiRoutes = require('./routes/api');
+const { DefaultDeserializer } = require('v8');
 
 app.use(apiRoutes);
 
@@ -27,6 +28,10 @@ app.listen(3000, () => { });
 
 
 
+DefaultDeserializer
+
+dfdsfdsf
+sdfdsfdsf
 
 
 
