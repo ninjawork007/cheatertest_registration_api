@@ -1,0 +1,23 @@
+{
+    "name": "cheatertest-registration-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "dependencies": {
+        "amqplib": "^0.7.1",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "mongoose": "^5.9.9",
+        "pm2": "^4.4.1",
+        "uuid": "^8.3.0"
+    },
+    "scripts": {
+        "dev": "node ./src/app.js --name api",
+        "start": "pm2 start ./src/app.js --name api",
+        "stop": "pm2 stop ./src/app.js --name api",
+        "restart": "pm2 restart ./src/app.js --name api",
+        "delete": "pm2 delete ./src/app.js --name api",
+        "status": "pm2 status ./src/app.js --name api",
+        "logs": "pm2 logs ./src/app.js --name api"
+    }
+}
